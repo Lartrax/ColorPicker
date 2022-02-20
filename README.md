@@ -30,7 +30,4 @@ AHK AutoHotKey
 Icon:
 Made in Blender and Paint.net
 
-Links:
-https://www.blender.org/
-https://www.getpaint.net/
-https://www.autohotkey.com/
+You may compile the code yourself with https://www.autohotkey.com/
