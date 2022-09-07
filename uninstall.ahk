@@ -13,6 +13,6 @@ If (A_IsAdmin) {
     ExitApp
 } 
 Else {
-    Run *RunAs "%A_AhkPath%" "%A_ScriptFullPath%"
+    Run *RunAs "%A_ScriptFullPath%"
     ExitApp
 }
