@@ -20,9 +20,9 @@ If (A_IsAdmin) {
     Send, {Enter}
     GuiControl,, Progress, 60
     GuiControl,, Log, Send, {Enter}
-    Sleep, 500
+    Sleep, 1000
     GuiControl,, Progress, 70
-    GuiControl,, Log, Sleep, 500
+    GuiControl,, Log, Sleep, 1000
     FileDelete, C:\Program Files\ColorPicker\archive.exe
     GuiControl,, Progress, 80
     GuiControl,, Log, FileDelete, C:\Program Files\ColorPicker\archive.exe
