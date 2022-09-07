@@ -1,3 +1,4 @@
+#SingleInstance, force
 If (A_IsAdmin) {
     Gui, Add, Progress, w300 h20 cDefault vProgress, 0
     Gui, Add, ListBox, w300 r10 vLog
