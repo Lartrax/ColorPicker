@@ -8,7 +8,7 @@ If (A_IsAdmin) {
     GuiControl,, Log, FileRemoveDir, C:\Program Files\ColorPicker, 1
     FileDelete, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk
     GuiControl,, Progress, 100
-    GuiControl,, Log, FFileDelete, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk
+    GuiControl,, Log, FileDelete, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk
     Sleep, 1000
     Gui, Destroy
     SelfDelete(10)
