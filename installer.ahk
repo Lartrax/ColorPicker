@@ -9,7 +9,7 @@ If (A_IsAdmin) {
     FileCreateDir, C:\Program Files\ColorPicker
     GuiControl,, Progress, 20
     GuiControl,, Log, FileCreateDir, C:\Program Files\ColorPicker
-    UrlDownloadToFile, https://github.com/Lartrax/ColorPicker/releases/download/v1.1/archive.exe, C:\Program Files\ColorPicker\archive.exe
+    UrlDownloadToFile, https://github.com/Lartrax/ColorPicker/releases/download/v1.2/archive.exe, C:\Program Files\ColorPicker\archive.exe
     GuiControl,, Progress, 30
     GuiControl,, UrlDownloadToFile, https://github.com/Lartrax/ColorPicker/releases/download/v1.1/archive.exe, C:\Program Files\ColorPicker\archive.exe
     Run C:\Program Files\ColorPicker\archive.exe
@@ -27,16 +27,16 @@ If (A_IsAdmin) {
     FileDelete, C:\Program Files\ColorPicker\archive.exe
     GuiControl,, Progress, 80
     GuiControl,, Log, FileDelete, C:\Program Files\ColorPicker\archive.exe
-    FileCreateShortcut, C:\Program Files\ColorPicker\ColorPicker.exe, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk, , , , C:\Program Files\ColorPicker\ColorPicker.ico, , 
+    FileCreateShortcut, C:\Program Files\ColorPicker\ColorPicker.exe, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk, , , , C:\Program Files\ColorPicker\ColorPicker.ico, ,
     GuiControl,, Progress, 90
-    GuiControl,, Log, FileCreateShortcut, C:\Program Files\ColorPicker\ColorPicker.exe, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk, , , , C:\Program Files\ColorPicker\ColorPicker.ico, , 
+    GuiControl,, Log, FileCreateShortcut, C:\Program Files\ColorPicker\ColorPicker.exe, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk, , , , C:\Program Files\ColorPicker\ColorPicker.ico, ,
     BlockInput, Off
     GuiControl,, Progress, 100
     GuiControl,, Log, BlockInput, Off
     Sleep, 1000
     Gui, Destroy
     ExitApp
-} 
+}
 Else {
     Run *RunAs "%A_ScriptFullPath%"
     ExitApp
