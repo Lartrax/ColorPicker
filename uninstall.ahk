@@ -11,7 +11,7 @@ If (A_IsAdmin) {
     GuiControl,, Log, FileDelete, %A_AppData%\Microsoft\Windows\Start Menu\Programs\ColorPicker.lnk
     Sleep, 1000
     Gui, Destroy
-    SelfDelete(10)
+    SelfDelete(2)
     ExitApp
 }
 Else {
